@@ -1,4 +1,4 @@
-#中文支持
+# 中文支持
   1、下载类库语言安装脚本
     https://github.com/dompdf/utils.git
 
@@ -15,8 +15,10 @@
   5、在HTML中使用我们安装的字体,你可以在这个HTML任何地方写这个字体样式，不过为了全文显示正常最好还是在这写(也可以卸载style标签内)。
 	<body style="font-family:simsun">中文字体</body>
 
-#中文换行
+# 中文换行
+
 vendor\dompdf\dompdf\src\FrameReflower\Text.php中
+
     $words = preg_split('/([\s-]+)/u', $text, -1, PREG_SPLIT_DELIM_CAPTURE);
     $wc = count($words);
     改成
